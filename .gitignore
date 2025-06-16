@@ -1,0 +1,17 @@
+# Ignore Python virtual environment
+venv/
+
+# Ignore DuckDB database file
+dbt_takehome.duckdb
+
+# Ignore dbt-generated artifacts and dependencies
+dbt_packages/
+target/
+logs/
+
+# Ignore local dbt config (personal path/config data)
+profiles.yml
+
+# Ignore macOS system files
+.DS_Store
+

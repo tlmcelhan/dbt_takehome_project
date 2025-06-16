@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: Fact table with one row per order.
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: ['order_id']
+      - not_null:
+          column_name: order_id
+
+  - name: dim_contacts
+    description: Dimension table with one row per contact.
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: ['contact_id']
+      - not_null:
+          column_name: contact_id
+      
