@@ -19,6 +19,6 @@ models:
         tests:
           - unique
           - not_null
-      - name: status
+      - name: orderstatus
         tests:
           - not_null
